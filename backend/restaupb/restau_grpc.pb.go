@@ -57,5 +57,5 @@ var TJLService_ServiceDesc = grpc.ServiceDesc{
 	HandlerType: (*TJLServiceServer)(nil),
 	Methods:     []grpc.MethodDesc{},
 	Streams:     []grpc.StreamDesc{},
-	Metadata:    "backend/restaupb/restau.proto",
+	Metadata:    "restaupb/restau.proto",
 }
