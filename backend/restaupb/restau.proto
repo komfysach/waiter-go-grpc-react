@@ -1,0 +1,58 @@
+syntax="proto3";
+
+package backend;
+
+option go_package = "backend/restaupb";
+
+message Admin {
+    string admin_id = 1;
+    string name = 2;
+    string email = 3;
+    string password = 4;
+}
+
+message Waiter {
+    string waiter_id = 1;
+    string name = 2;
+    string email = 3;
+    string password = 4;
+}
+
+message Patron {
+    string patron_id = 1;
+    string name = 2;
+    string email = 3;
+    string password = 4;
+}
+
+message Table {
+    string table_id = 1;
+    int32 pax = 2;
+    string order_id = 3;
+}
+
+message Order {
+    string order_id = 1;
+    string products = 3;
+    string waiter_id = 4;
+    string table_id = 5;
+    float total = 6;
+}
+
+message Product {
+    string product_id = 1;
+    string name = 2;
+    float price = 3;
+    string image = 4;
+}
+
+message Bookings {
+    string day = 1;
+    string time = 2;
+    string table_id = 3;
+    int32 pax = 4;
+}
+
+service TJLService {
+
+}
